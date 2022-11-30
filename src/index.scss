@@ -6,9 +6,26 @@ html,
 body,
 #root {
   height: 100vh;
+
+  aside {
+    height: 100vh;
+  }
 }
 
 
 header {
   display: block;
+  transition: 1s;
+
+  .navbar-collapse {
+    bottom: 100%;
+  }
+  
+  .navbar-collapsed {
+    bottom: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

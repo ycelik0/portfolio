@@ -1,1 +1,1 @@
-@tailwind base;@tailwind components;@tailwind utilities;html,body,#root{height:100vh}header{display:block}
+@tailwind base;@tailwind components;@tailwind utilities;html,body,#root{height:100vh}html aside,body aside,#root aside{height:100vh}header{display:block;transition:1s}header .navbar-collapse{bottom:100%}header .navbar-collapsed{bottom:0}::-webkit-scrollbar{display:none}
