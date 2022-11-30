@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@use "./assets/scss/fonts";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
 html,
 body,
@@ -12,7 +22,6 @@ body,
   }
 }
 
-
 header {
   display: block;
   transition: 1s;
@@ -20,9 +29,20 @@ header {
   .navbar-collapse {
     bottom: 100%;
   }
-  
+
   .navbar-collapsed {
     bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    bottom: -100%;
+    
+    ul {
+      position: absolute;
+      bottom: -100%;
+    }
   }
 }
 
